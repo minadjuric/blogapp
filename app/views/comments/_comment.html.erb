@@ -9,8 +9,9 @@
   <%= comment.description %>
 </p>
 
-
 <p>
+  <%= link_to 'Edit', [comment.article, comment] %> |
+
   
   <%= link_to 'Delete Comment', [comment.article, comment],
                method: :delete,
